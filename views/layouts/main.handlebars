@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cherryton Academy</title>
+  <link rel="shortcut icon" type="png" href="/images/cherrytonfavgrey.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  {{!-- <link rel="stylesheet" href="/stylesheets/bulma.css"> --}}
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="level">
+        <div class="level-item has-centered-text">
+          <img src="/images/cherrytonfavgreysm.png">
+          <h1 class="title is-3">
+            <a href="/">Cherryton Academy</a>
+          </h1>
+        </div>
+      </div>
+      <nav>
+        {{#if loggedIn}}
+        <a href="/dashboard">dashboard</a>
+        <button id="logout" class="btn-no-style">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+      </nav>
+    </header>
+    <main>
+      {{{ body }}}
+    </main>
+    <footer>
+      <div class="content has-text-centered">
+        <p>
+          <a><strong>Cherryton Academy</strong></a> is a mockup website from the manga and animated series
+          <a href="https://en.wikipedia.org/wiki/Beastars" target="_blank">Beastars</a>.
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
