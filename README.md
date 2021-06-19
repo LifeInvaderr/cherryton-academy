@@ -1,7 +1,7 @@
 # Cherryton Academy - Challenge 14
 Deployed URL: https://cherryton-academy.herokuapp.com/
 
-The respository: https://github.com/LifeInvaderr/cherryton-academy
+This respository: https://github.com/LifeInvaderr/cherryton-academy
 
 ![image](public/images/cherryton-webpage.png)
 
