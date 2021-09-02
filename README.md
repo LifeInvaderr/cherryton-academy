@@ -16,6 +16,7 @@ Users are able to signup, post and comment on other users posts.
 * [Questions](#questions)
 
 ## Technologies
+* Javascript - Express.js
 * Handlebars
 * Bulma/CSS
 * Sequalize
